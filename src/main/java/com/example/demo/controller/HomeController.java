@@ -12,27 +12,22 @@ public class HomeController {
 
     @GetMapping("/")
 public String index() {
-    return "Bin";
+    return "tao";
 
 }
 
-    @GetMapping("/actors")
+    @GetMapping("/driftstatus")
     public String actors() {
-        return "Actors";
+        return "driftstatus";
 
     }
 
-    @GetMapping("/movies")
+    @GetMapping("/energibesparelse")
     public String movies() {
-        return "Movies";
+        return "energibesparelse";
 
     }
 
-    @GetMapping("/calculaor")
-    public String calculator() {
-        return "calculator";
-
-    }
 
     @PostMapping("/result")
     public String result(WebRequest wr, Model model) {
