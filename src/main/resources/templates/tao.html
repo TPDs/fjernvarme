@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!--[if lt IE 7]> <html xmlns:umbraco="http://umbraco.org" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html xmlns:umbraco="http://umbraco.org" class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -26,7 +25,7 @@ Et tilslutningsanlæg er den teknik, der forbinder en bygnings varmefordelingsan
     <!-- Fonts -->
     <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800"/>
     <!-- CSS -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../less/bootstrap_imports.css">
     <link rel="stylesheet" href="/flick/jquery-ui-1.10.3.custom.min.css">
     <!-- Theme Colors -->
@@ -52,9 +51,9 @@ Et tilslutningsanlæg er den teknik, der forbinder en bygnings varmefordelingsan
         <div class="topbar row">
             <div class="xs-12">
                 <a href="/" class="hidden-print">
-                    <img src="/images/albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" />
+                    <img src="../images/albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" />
                 </a>
-                <img src="/images/albertslund-forsyning-logo.png" alt="logo" class="logo visible-print" />
+                <img src="../images/albertslund-forsyning-logo.png" alt="logo" class="logo visible-print" />
                 <div class="hidden-sm hidden-xs pull-right align-right hide-on-print">
                     <nav class="quicklinks">
                         <a href="/fjernvarme/om-os/" title="Om os">Om os</a>/ <a href="/fjernvarme/selvbetjening/" title="Selvbetjening">Selvbetjening</a>/ <a href="/kontakt-os/" title="Kontakt os">Kontakt os</a>/ <a href="/behandling-af-data/" title="Behandling af data">Behandling af data</a>
@@ -76,7 +75,7 @@ Et tilslutningsanlæg er den teknik, der forbinder en bygnings varmefordelingsan
                 </form>
                 <input type="hidden" value="1">
                 <nav id="navigation" class="topnavigation collapse-navigation hide-on-print">
-                    <ul id="mega-menu">
+                    <!--<ul id="mega-menu">
                         <li class="expandable theme- current ">
                             <a href="/fjernvarme/" title="Fjernvarme">
                                 Fjernvarme
@@ -156,7 +155,27 @@ Et tilslutningsanlæg er den teknik, der forbinder en bygnings varmefordelingsan
                                 Driftsstatus
                             </a>
                         </li>
-                    </ul>
+                    </ul>-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fjernvarme
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="">Hvad er fjernvarme</a>
+                            <a class="dropdown-item" href="/tao">TAO-ordning</a>
+                            <a class="dropdown-item" href="">Udskiftning af målere</a>
+                            <a class="dropdown-item" href="">Lavtemperaturfjernvarme</a>
+                            <a class="dropdown-item" href="">Ledningsoplysninger</a>
+                            <a class="dropdown-item" href="">Takster og bestemmelser</a>
+                            <a class="dropdown-item" href="">Planlagte renoveringer</a>
+                            <a class="dropdown-item" href="/driftstatus">Driftsstatus</a>
+                            <a class="dropdown-item" href="">COVID-19</a>
+                        </div>
+                    </div>
+
+
+
+
                     <div id="open-current-page-in-menu" class="show-navigation primary-bg hide-on-print">
                         <a href="#">Vis menuen</a>
                         <input type="hidden" value="True 0" />

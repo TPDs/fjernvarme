@@ -12,7 +12,12 @@ public class HomeController {
 
     @GetMapping("/")
 public String index() {
-    return "tao";
+        return "test";
+    }
+
+        @GetMapping("/tao")
+        public String tao() {
+            return "tao";
 
 }
 
