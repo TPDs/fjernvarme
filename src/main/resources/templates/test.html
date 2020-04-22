@@ -1,12 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]> <html xmlns:umbraco="http://umbraco.org" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html xmlns:umbraco="http://umbraco.org" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html xmlns:umbraco="http://umbraco.org" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns:umbraco="http://umbraco.org" class="no-js" lang="da">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Driftsstatus - Albertslund Kommune</title>
+    <meta name="description" content="Velkommen til Albertslund Forsynings nye hjemmeside. Her kan du finde information om fjernvarmen i Albertslund samt læse mere om energibesparelser og Danmarks højeste energitilskud.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Language" content="da" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- RSS FEEDS -->
+    <!-- Siteimprove meta tags -->
+    <meta name="content-editor" content="Milj&#248; &amp; Teknik">
+    <meta name="content-responsible" content="Milj&#248; &amp; Teknik"/>
+    <!-- Fonts -->
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/less/bootstrap_imports.css">
+    <link rel="stylesheet" href="/templates/flick/jquery-ui-1.10.3.custom.min.css">
+    <!-- Theme Colors -->
+    <link rel="stylesheet" href="../alttemplate_themecolorcss.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<Script src="/templates/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script>window.jQuery || document.write('<Script src="/scripts/vendor/jquery-ui-1.10.4.custom.min.js"><\/script>')</script>
+    <script src="/templates/vendor/jquery.validate.min.js"></script>
+    <script src="/templates/vendor/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="https://kort.albertslund.dk/clientapi/minimap2/mmloader.js" charset="iso-8859-1"></script>
+    <!--[if IE]>
+    <script src="/scripts/vendor/respond.min.js"></script>
+    <![endif]-->
+    <!-- current PageId for Javascript -->
+    <script>
+        window.pageId = 32117;
+    </script>
+</head>
 <div class="wrapper">
     <header class="container">
         <div class="topbar row">
             <div class="xs-12">
                 <div class="hidden-sm hidden-xs pull-right align-right hide-on-print">
                     <a href="/" class="hidden-print">
-                        <img src="../images/albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" />
+                        <img src="../static/albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" />
                     </a>
-                    <img src="../images/albertslund-forsyning-logo.png" alt="logo" class="logo visible-print" />
+                    <img src="../static/albertslund-forsyning-logo.png" alt="logo" class="logo visible-print" />
                     <div class="hidden-sm hidden-xs pull-right allign-right hide-on-print">
                     </div>
                     <div class="hidden-md hidden-lg">
@@ -101,28 +149,37 @@
                             </li>
                         </ul>-->
 
-                        <div class="dropdown">
-                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Fjernvarme
+                        <!-- Default dropleft button -->
+                        <div class="btn-group dropleft">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropleft
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="">Hvad er fjernvarme</a>
-                                <a class="dropdown-item" href="/tao">TAO-ordning</a>
-                                <a class="dropdown-item" href="">Udskiftning af målere</a>
-                                <a class="dropdown-item" href="">Lavtemperaturfjernvarme</a>
-                                <a class="dropdown-item" href="">Ledningsoplysninger</a>
-                                <a class="dropdown-item" href="">Takster og bestemmelser</a>
-                                <a class="dropdown-item" href="">Planlagte renoveringer</a>
-                                <a class="dropdown-item" href="/driftstatus">Driftsstatus</a>
-                                <a class="dropdown-item" href="">COVID-19</a>
-                            </div>
-                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Energibesparelser
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" href="/energibesparelse">Energibesparelser</a>
                                 <a class="dropdown-item" href="">Energirådgivning</a>
                                 <a class="dropdown-item" href="">Energitilskud</a>
                             </div>
-                            <a href="/driftstatus" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Driftstatus</a>
+                        </div>
+
+                        <!-- Split dropleft button -->
+                        <div class="btn-group">
+                            <div class="btn-group dropleft" role="group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropleft</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="">Hvad er fjernvarme</a>
+                                    <a class="dropdown-item" href="/tao">TAO-ordning</a>
+                                    <a class="dropdown-item" href="">Udskiftning af målere</a>
+                                    <a class="dropdown-item" href="">Lavtemperaturfjernvarme</a>
+                                    <a class="dropdown-item" href="">Ledningsoplysninger</a>
+                                    <a class="dropdown-item" href="">Takster og bestemmelser</a>
+                                    <a class="dropdown-item" href="">Planlagte renoveringer</a>
+                                    <a class="dropdown-item" href="/driftstatus">Driftsstatus</a>
+                                    <a class="dropdown-item" href="">COVID-19</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary">
+                                Split dropleft
+                            </button>
                         </div>

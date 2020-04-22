@@ -11,8 +11,13 @@ import org.springframework.web.context.request.WebRequest;
 public class HomeController {
 
     @GetMapping("/")
-public String index() {
+    public String index() {
         return "tao";
+    }
+
+    @GetMapping("/test")
+public String test() {
+        return "test";
     }
 
         @GetMapping("/tao")
@@ -22,13 +27,13 @@ public String index() {
 }
 
     @GetMapping("/driftstatus")
-    public String actors() {
+    public String driftstatus() {
         return "driftstatus";
 
     }
 
     @GetMapping("/energibesparelse")
-    public String movies() {
+    public String energibesparelse() {
         return "energibesparelse";
 
     }

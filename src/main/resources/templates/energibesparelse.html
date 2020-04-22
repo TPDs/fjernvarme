@@ -9,8 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Energibesparelser - Albertslund Kommune</title>
-    <meta name="description" content="Test sektion subside energiTest sektion subside energiTest sektion subside energi">
+    <title>TAO-ordningen - Albertslund Kommune</title>
+    <meta name="description" content="TAO betyder Tilslutnings-Anlægs-Overtagelse.
+Et tilslutningsanlæg er den teknik, der forbinder en bygnings varmefordelingsanlæg,">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Language" content="da" />
@@ -26,154 +27,52 @@
     <!-- Fonts -->
     <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="/less/bootstrap_imports.css">
-    <link rel="stylesheet" href="/templates/flick/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../less/bootstrap_imports.css">
+    <link rel="stylesheet" href="/flick/jquery-ui-1.10.3.custom.min.css">
     <!-- Theme Colors -->
     <link rel="stylesheet" href="../alttemplate_themecolorcss.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<Script src="/templates/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<Script src="/vendor/jquery-1.9.1.min.js"><\/script>')</script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script>window.jQuery || document.write('<Script src="/scripts/vendor/jquery-ui-1.10.4.custom.min.js"><\/script>')</script>
-    <script src="/templates/vendor/jquery.validate.min.js"></script>
-    <script src="/templates/vendor/jquery.validate.unobtrusive.js"></script>
+    <script>window.jQuery || document.write('<Script src="/vendor/jquery-ui-1.10.4.custom.min.js"><\/script>')</script>
+    <script src="/vendor/jquery.validate.min.js"></script>
+    <script src="/vendor/jquery.validate.unobtrusive.js"></script>
     <script type="text/javascript" src="https://kort.albertslund.dk/clientapi/minimap2/mmloader.js" charset="iso-8859-1"></script>
-    <!--[if IE]>
-    <script src="/scripts/vendor/respond.min.js"></script>
-    <![endif]-->
+    <!--[if IE]
+    <script src="/scripts/respond.min.js"></script>
+    [endif]-->
     <!-- current PageId for Javascript -->
     <script>
-        window.pageId = 27867;
+        window.pageId = 27876;
     </script>
 </head>
 <body class="site-level-">
+
 <div class="wrapper">
     <header class="container">
         <div class="topbar row">
             <div class="xs-12">
-                <div class="hidden-sm hidden-xs pull-right align-right hide-on-print">
-                    <a href="/" class="hidden-print">
-                        <img src="../images/albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" />
-                    </a>
-                    <img src="../images/albertslund-forsyning-logo.png" alt="logo" class="logo visible-print" />
-                    <div class="hidden-sm hidden-xs pull-right allign-right hide-on-print">
-                    </div>
-                    <div class="hidden-md hidden-lg">
-                        <div class="menu-trigger primary-bg hide-on-print"><i class="icon-list"> </i><span>Menu</span></div>
-                    </div>
-                    <div class="clearfix"></div>
+                <!--<div class="hidden-sm hidden-xs pull-right align-right hide-on-print">-->
+                <a href="/" class="hidden-print">
+                    <!--<img src="https://tech-partner.dk/wp-content/uploads/2016/04/Alb-varmev%C3%A6rk.png" alt="logo" class="logo hidden-print" />-->
+                    <img src="../albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" style="border-top-width: 20px; padding-top: 20px; padding-bottom: 20px;" />
+                </a>
+                <!--<div class="hidden-sm hidden-xs pull-right allign-right hide-on-print">
                 </div>
+            <div class="hidden-md hidden-lg">
+                <div class="menu-trigger primary-bg hide-on-print"><i class="icon-list"> </i><span>Menu</span></div>
+            </div>-->
+                <div class="clearfix"></div>
             </div>
-            <div class="menu hide-on-print">
+        </div>
+        <div class="menu hide-on-print">
                 <div >
                     <input type="hidden" value="1">
                     <nav id="navigation" class="topnavigation collapse-navigation hide-on-print">
-                        <!--<ul id="mega-menu">
-                            <li class="expandable theme- current ">
-                                <a href="/fjernvarme/" title="Fjernvarme">
-                                    Fjernvarme
-                                </a>
-                                <ul>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/hvad-er-fjernvarme/" data-items-src="/fjernvarme/hvad-er-fjernvarme/?alttemplate=MainNavigationSubStructure" title="Hvad er fjernvarme?">
-                                            Hvad er fjernvarme?
-                                        </a>
-                                    </li>
-                                    <li class=" current ">
-                                        <a href="/fjernvarme/tao-ordningen/" data-items-src="/fjernvarme/tao-ordningen/?alttemplate=MainNavigationSubStructure" title="TAO-ordningen">
-                                            TAO-ordningen
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/udskiftning-af-maalere/" data-items-src="/fjernvarme/udskiftning-af-maalere/?alttemplate=MainNavigationSubStructure" title="Udskiftning af m&#229;lere">
-                                            Udskiftning af m&#229;lere
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/lavtemperaturfjernvarme/" data-items-src="/fjernvarme/lavtemperaturfjernvarme/?alttemplate=MainNavigationSubStructure" title="Lavtemperaturfjernvarme">
-                                            Lavtemperaturfjernvarme
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/ledningsoplysninger/" data-items-src="/fjernvarme/ledningsoplysninger/?alttemplate=MainNavigationSubStructure" title="Ledningsoplysninger">
-                                            Ledningsoplysninger
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/takster-og-bestemmelser/" data-items-src="/fjernvarme/takster-og-bestemmelser/?alttemplate=MainNavigationSubStructure" title="Takster og bestemmelser">
-                                            Takster og bestemmelser
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/planlagte-renoveringer/" data-items-src="/fjernvarme/planlagte-renoveringer/?alttemplate=MainNavigationSubStructure" title="Planlagte renoveringer">
-                                            Planlagte renoveringer
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/driftsstatus/" data-items-src="/fjernvarme/driftsstatus/?alttemplate=MainNavigationSubStructure" title="Driftsstatus">
-                                            Driftsstatus
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/fjernvarme/covid-19/" data-items-src="/fjernvarme/covid-19/?alttemplate=MainNavigationSubStructure" title="COVID-19">
-                                            COVID-19
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="expandable theme- ">
-                                <a href="/energibesparelser/" title="Energibesparelser">
-                                    Energibesparelser
-                                </a>
-                                <ul>
-                                    <li class=" ">
-                                        <a href="/energibesparelser/energibesparelser/" data-items-src="/energibesparelser/energibesparelser/?alttemplate=MainNavigationSubStructure" title="Energibesparelser">
-                                            Energibesparelser
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/energibesparelser/energiraadgivning/" data-items-src="/energibesparelser/energiraadgivning/?alttemplate=MainNavigationSubStructure" title="Energir&#229;dgivning">
-                                            Energir&#229;dgivning
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="/energibesparelser/energitilskud/" data-items-src="/energibesparelser/energitilskud/?alttemplate=MainNavigationSubStructure" title="Energitilskud">
-                                            Energitilskud
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" ">
-                                <a href="/driftsstatus/" data-items-src="/driftsstatus/?alttemplate=MainNavigationSubStructure" title="Driftsstatus">
-                                    Driftsstatus
-                                </a>
-                            </li>
-                        </ul>-->
-
-                        <div class="dropdown">
-                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Fjernvarme
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="">Hvad er fjernvarme</a>
-                                <a class="dropdown-item" href="/tao">TAO-ordning</a>
-                                <a class="dropdown-item" href="">Udskiftning af målere</a>
-                                <a class="dropdown-item" href="">Lavtemperaturfjernvarme</a>
-                                <a class="dropdown-item" href="">Ledningsoplysninger</a>
-                                <a class="dropdown-item" href="">Takster og bestemmelser</a>
-                                <a class="dropdown-item" href="">Planlagte renoveringer</a>
-                                <a class="dropdown-item" href="/driftstatus">Driftsstatus</a>
-                                <a class="dropdown-item" href="">COVID-19</a>
-                            </div>
-                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Energibesparelser
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="/energibesparelse">Energibesparelser</a>
-                                <a class="dropdown-item" href="">Energirådgivning</a>
-                                <a class="dropdown-item" href="">Energitilskud</a>
-                            </div>
-                            <a href="/driftstatus" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Driftstatus</a>
-                        </div>
+                        <a href="/tao" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="border-left-width: 1px; margin-left: 300px;">Fjernvarme</a>
+                        <a href="/energibesparelse" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Energibesparelse</a>
+                        <a href="/driftstatus" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Driftstatus</a>
                 </nav>
                 <div class="clearfix"></div>
             </div>
@@ -194,7 +93,7 @@
                             Få øget komfort i din bygning og hjælp med at nedbringe byens og dit eget varmetab
                         </p>
                         <hr />
-                        <img class="default-margin-bottom hidden-print" style="margin-bottom: 15px;" width="100%" src="/media/1713644/bjerre-radiator.jpg?crop=0.0128118678354686,0.29586038961039,0.25497600543,0.137532742606343&amp;cropmode=percentage&amp;width=700&amp;height=300&amp;rnd=131871818580000000" alt="Energibesparelser - Albertslund Kommune" />
+                        <img class="default-margin-bottom hidden-print" style="margin-bottom: 15px;" width="100%" src="../wierdlookinglady.jpg" alt="Energibesparelser - Albertslund Kommune" />
                         <!-- Insert default "beforeContent" markup here -->
                         <p>Bygninger i EU forventes at nedsætte deres energiforbrug. Det gælder også varmeforbruget i Albertslund, hvor alle bygningsejere opfordres til at hjælpe med at efterisolere og effektivisere.</p>
                         <p>En god velisoleret bygning har et meget lille behov for tilført varme. Det gælder også for Albertslunds mange boliger og erhvervsbygninger, der for de flestes vedkommende er bygget i 1960- og -70'erne. Mange er lavet i beton og de fleste har store glasarealer, der giver kolde rum om vinteren og meget varme rum om sommeren.</p>
@@ -208,7 +107,7 @@
         </div>
     </div>
     <div class="footer hide-on-print">
-        <img class="silhouette" src="/images/silhouette1.png" alt="Silhouette" style="margin-top: -0px" />
+        <img class="silhouette" src="../silhouette1.png" alt="Silhouette" style="margin-top: -0px;margin-left: 375px;" />
         <div class="footer-content sec-bg-color">
             <div class="container">
                 <div class="row">
@@ -219,34 +118,11 @@
                             <p>CVR 66137112</p>
                             <p><a href="mailto:info@albforsyning.dk">info@albforsyning.dk</a></p>
                         </div>
-                        <div class="xs-12 sm-6 md-5 links">
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="xs-12 sm-12 md-3 align-right share">
-                            <div class="icons">
-                                <a href="?accessibility=1" class="icon round secondary-bg icon-font-size off" title="Tekst størrelse"></a>
-                                <a href="?morecontrast=1" class="icon round secondary-bg icon-brightness-contrast off" title="Mere kontrast"></a>
-                                <a href="http://www.adgangforalle.dk/" target="_blank" class="icon round secondary-bg icon-bubble" title="Læs Højt"></a>
-                            </div>
-                            <div class="icons">
-                                <a href="https://www.facebook.com/Albertslund-Forsyning-375518805873099/" target="_blank" class="icon round icon-facebook" title="Facebook"></a>
-                            </div>
-                            <div class="icons">
-                                <a href="/umbraco#/content/content/edit/27867" target="_blank">
-                                    Redaktør login
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="cookie-notification">
-    Cookies hj&#230;lper os med at levere vores tjenester. Ved at bruge vores tjenester, accepterer du vores brug af cookies.
-    <button>OK</button>
-    <a href="http://erhvervsstyrelsen.dk/hvad-er-cookies" target="_blank" title="Læs mere om cookies på denne side">Læs mere</a>
 </div>
 <!-- fancyBox -->
 <link rel="stylesheet" href="/scripts/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
