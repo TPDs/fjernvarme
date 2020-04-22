@@ -8,12 +8,15 @@
 <!--<![endif]-->
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Driftsstatus - Albertslund Kommune</title>
     <meta name="description" content="Velkommen til Albertslund Forsynings nye hjemmeside. Her kan du finde information om fjernvarmen i Albertslund samt læse mere om energibesparelser og Danmarks højeste energitilskud.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Language" content="da" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,117 +56,41 @@
                     <img src="/images/albertslund-forsyning-logo.png" alt="logo" class="logo hidden-print" />
                 </a>
                 <img src="/images/albertslund-forsyning-logo.png" alt="logo" class="logo visible-print" />
-                <div class="hidden-sm hidden-xs pull-right align-right hide-on-print">
-                    <nav class="quicklinks">
-                        <a href="/fjernvarme/om-os/" title="Om os">Om os</a>/ <a href="/fjernvarme/selvbetjening/" title="Selvbetjening">Selvbetjening</a>/ <a href="/kontakt-os/" title="Kontakt os">Kontakt os</a>/ <a href="/behandling-af-data/" title="Behandling af data">Behandling af data</a>
-                        <div class="clearfix"></div>
-                    </nav>
-                </div>
-                <div class="hidden-md hidden-lg">
+
+                <!--<div class="hidden-md hidden-lg">
                     <div class="menu-trigger primary-bg hide-on-print"><i class="icon-list"> </i><span>Menu</span></div>
-                </div>
+                </div>-->
                 <div class="clearfix"></div>
             </div>
         </div>
         <div class="menu hide-on-print">
             <div >
-                <form class="search-field" action="/soeg" method="get">
-                    <input type="text" class="formcontrol search-input" id="q" name="q" placeholder="Skriv hvad du s&#248;ger..." aria-label="Skriv hvad du s&#248;ger..."/>
-                    <input type="hidden" value="Skriv hvad du s&#248;ger..."/>
-                    <button class="search-button"></button>
-                </form>
                 <input type="hidden" value="1">
                 <nav id="navigation" class="topnavigation hide-on-print">
-                    <ul id="mega-menu">
-                        <li class="expandable theme- ">
-                            <a href="/fjernvarme/" title="Fjernvarme">
-                                Fjernvarme
-                            </a>
-                            <ul>
-                                <li class=" ">
-                                    <a href="/fjernvarme/hvad-er-fjernvarme/" data-items-src="/fjernvarme/hvad-er-fjernvarme/?alttemplate=MainNavigationSubStructure" title="Hvad er fjernvarme?">
-                                        Hvad er fjernvarme?
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/tao-ordningen/" data-items-src="/fjernvarme/tao-ordningen/?alttemplate=MainNavigationSubStructure" title="TAO-ordningen">
-                                        TAO-ordningen
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/udskiftning-af-maalere/" data-items-src="/fjernvarme/udskiftning-af-maalere/?alttemplate=MainNavigationSubStructure" title="Udskiftning af m&#229;lere">
-                                        Udskiftning af m&#229;lere
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/lavtemperaturfjernvarme/" data-items-src="/fjernvarme/lavtemperaturfjernvarme/?alttemplate=MainNavigationSubStructure" title="Lavtemperaturfjernvarme">
-                                        Lavtemperaturfjernvarme
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/ledningsoplysninger/" data-items-src="/fjernvarme/ledningsoplysninger/?alttemplate=MainNavigationSubStructure" title="Ledningsoplysninger">
-                                        Ledningsoplysninger
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/takster-og-bestemmelser/" data-items-src="/fjernvarme/takster-og-bestemmelser/?alttemplate=MainNavigationSubStructure" title="Takster og bestemmelser">
-                                        Takster og bestemmelser
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/planlagte-renoveringer/" data-items-src="/fjernvarme/planlagte-renoveringer/?alttemplate=MainNavigationSubStructure" title="Planlagte renoveringer">
-                                        Planlagte renoveringer
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/driftsstatus/" data-items-src="/fjernvarme/driftsstatus/?alttemplate=MainNavigationSubStructure" title="Driftsstatus">
-                                        Driftsstatus
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/fjernvarme/covid-19/" data-items-src="/fjernvarme/covid-19/?alttemplate=MainNavigationSubStructure" title="COVID-19">
-                                        COVID-19
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="expandable theme- ">
-                            <a href="/energibesparelser/" title="Energibesparelser">
-                                Energibesparelser
-                            </a>
-                            <ul>
-                                <li class=" ">
-                                    <a href="/energibesparelser/energibesparelser/" data-items-src="/energibesparelser/energibesparelser/?alttemplate=MainNavigationSubStructure" title="Energibesparelser">
-                                        Energibesparelser
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/energibesparelser/energiraadgivning/" data-items-src="/energibesparelser/energiraadgivning/?alttemplate=MainNavigationSubStructure" title="Energir&#229;dgivning">
-                                        Energir&#229;dgivning
-                                    </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="/energibesparelser/energitilskud/" data-items-src="/energibesparelser/energitilskud/?alttemplate=MainNavigationSubStructure" title="Energitilskud">
-                                        Energitilskud
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class=" current ">
-                            <a href="/driftsstatus/" data-items-src="/driftsstatus/?alttemplate=MainNavigationSubStructure" title="Driftsstatus">
-                                Driftsstatus
-                            </a>
-                        </li>
-                    </ul>
-                    <div id="open-current-page-in-menu" class="show-navigation primary-bg hide-on-print">
-                        <a href="#">Vis menuen</a>
-                        <input type="hidden" value="False 0" />
-                    </div>
-                    <div class="hidden-lg mobile-quicklinks hidden-md">
-                        <nav class="quicklinks">
-                            <a href="/fjernvarme/om-os/" title="Om os">Om os</a> <a href="/fjernvarme/selvbetjening/" title="Selvbetjening">Selvbetjening</a> <a href="/kontakt-os/" title="Kontakt os">Kontakt os</a> <a href="/behandling-af-data/" title="Behandling af data">Behandling af data</a>
-                            <div class="clearfix"></div>
-                        </nav>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fjernvarme
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="">Hvad er fjernvarme</a>
+                            <a class="dropdown-item" href="/tao">TAO-ordning</a>
+                            <a class="dropdown-item" href="">Udskiftning af målere</a>
+                            <a class="dropdown-item" href="">Lavtemperaturfjernvarme</a>
+                            <a class="dropdown-item" href="">Ledningsoplysninger</a>
+                            <a class="dropdown-item" href="">Takster og bestemmelser</a>
+                            <a class="dropdown-item" href="">Planlagte renoveringer</a>
+                            <a class="dropdown-item" href="/driftstatus">Driftsstatus</a>
+                            <a class="dropdown-item" href="">COVID-19</a>
+                        </div>
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Energibesparelser
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/energibesparelse">Energibesparelser</a>
+                            <a class="dropdown-item" href="">Energirådgivning</a>
+                            <a class="dropdown-item" href="">Energitilskud</a>
+                        </div>
+                        <a href="/driftstatus" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Driftstatus</a>
                     </div>
                 </nav>
                 <div class="clearfix"></div>
@@ -329,4 +256,13 @@
 <script src="/templates/vendor/Scripts/Esdh.js"></script>
 <!-- Custom Global Scripts -->
 <!-- Custom Global Scripts END -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
 </body>
